@@ -21,6 +21,11 @@ public class Question
         this.comment = comment;
     }
 
+    public string GetCorrectAnswerText(string v)
+    {
+        return answers[answerIndex];
+    }
+
     //確認用の関数
     public void ShowLog()
     {

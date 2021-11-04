@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CSVScript : MonoBehaviour
 {
     public TextAsset CSV;
+    public Text value3, value4, value5;
+    public static int nowIndex = 1;
+    public static string CorrectAnswerText;
 
     //CSVから分解した問題クラスを代入する配列
     public Question[] questions = new Question[500];
@@ -40,17 +44,13 @@ public class CSVScript : MonoBehaviour
             {
                 level = 3;
             }
-            else
-            {
-                //初級、中級、上級以外の文字が入力されていたら、エラーを出す
-                Debug.LogError(values[1] + "に初級、中級、上級の文字が入っている");
-            }
 
             //２番目：問題文
             string questionText = values[2];
+            CorrectAnswerText = questions[nowIndex].GetCorrectAnswerText(questions[nowIndex].answers[questions[nowIndex].answerIndex]);
 
             //3~5番目：選択肢　配列でまとめる
-            //values[3]A values[4]B values[5]C
+            //values[3]A values[4]B values[5]
             string[] answers = { values[3], values[4], values[5] };
 
             //６番目：正解の配列番号　Aが0、Bが1、Cが2
@@ -75,13 +75,30 @@ public class CSVScript : MonoBehaviour
 
             //作成したquestionクラスを配列に入れる
             questions[i] = q;
-
-            //全ての行の処理が終わればquestions配列に問題文が格納
-            //最初の問題をみたい場合
-            questions[1].ShowLog();
-
-            GetComponent<Text>().text = questions[1].question;
         }
+
+        //全ての行の処理が終わればquestions配列に問題文が格納
+        //最初の問題をみたい場合
+        questions[nowIndex].ShowLog();
+
+        GetComponent<Text>().text = questions[nowIndex].question;
+        value3.text = questions[nowIndex].answers[0];
+        value4.text = questions[nowIndex].answers[1];
+        value5.text = questions[nowIndex].answers[2];
+
+    }
+
+    public void OnClickAnswerButton(int answerIndex)
+    {
+        if (questions[nowIndex].answerIndex == answerIndex)
+        {
+            SceneManager.LoadScene("correct");
+        }
+        else
+        {
+            SceneManager.LoadScene("incorrect");
+        }
+
     }
 
     // Update is called once per frame

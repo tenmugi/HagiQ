@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/quiz.unity
     guid: 51be77988311a4e238c8e5c5b76a34f7
   - enabled: 1
-    path: Assets/answerIndex.unity
+    path: Assets/correct.unity
     guid: b1e40f7d3984b44529df38b179402db7
+  - enabled: 1
+    path: Assets/incorrect.unity
+    guid: e5f68e0a84722417885ffa140431613b
   m_configObjects: {}

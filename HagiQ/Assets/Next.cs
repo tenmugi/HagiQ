@@ -11,6 +11,8 @@ public class Next : MonoBehaviour
     {
         if(!firstPush)
         {
+            CSVScript.nowIndex++;
+
             SceneManager.LoadScene("quiz");
         }
     }
