@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Back : MonoBehaviour
 {
-    public bool firstPush = false;
+    private bool firstPush = false;
 
     public void PressBack()
     {

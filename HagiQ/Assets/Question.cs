@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
+
 public class Question 
 {
     public string category;
@@ -10,6 +11,7 @@ public class Question
     public string[] answers;
     public int answerIndex;
     public string comment;
+
 
     public Question(string category, int level, string question, string[]answers, int answerIndex, string comment)
     {
@@ -21,10 +23,14 @@ public class Question
         this.comment = comment;
     }
 
-    public string GetCorrectAnswerText(string v)
+
+    public string GetCorrectAnswerText()
     {
+        Debug.Log(answerIndex);
         return answers[answerIndex];
     }
+
+
 
     //確認用の関数
     public void ShowLog()
