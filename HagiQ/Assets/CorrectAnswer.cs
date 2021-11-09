@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GotoAnswerIndex : MonoBehaviour
+public class CorrectAnswer : MonoBehaviour
 {
     public static string CorrectAnswerText;
 

@@ -26,7 +26,6 @@ public class Question
 
     public string GetCorrectAnswerText()
     {
-        Debug.Log(answerIndex);
         return answers[answerIndex];
     }
 

@@ -93,6 +93,7 @@ public class CSVScript : MonoBehaviour
 
     public void OnClickAnswerButton(int answerIndex)
     {
+
         CorrectAnswerText = questions[nowIndex].GetCorrectAnswerText();
 
         if (questions[nowIndex].answerIndex == answerIndex)
