@@ -25,7 +25,7 @@ public class CSVScript : MonoBehaviour
         Debug.Log(csv.Length);
 
         //全ての行の数だけループする（１行目から開始）
-        for (int i = 1; i < csv.Length; i++)
+        for (int i = 1; i < csv.Length; Random.Range(1, 151))
         {
             //各行の要素を,で区切る
             string[] values = csv[i].Split(',');
