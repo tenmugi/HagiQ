@@ -11,6 +11,7 @@ public class CSVScript : MonoBehaviour
     public static int nowIndex = 1;
     public static string CorrectAnswerText;
 
+
     //CSVから分解した問題クラスを代入する配列
     public Question[] questions = new Question[500];
 
@@ -85,15 +86,16 @@ public class CSVScript : MonoBehaviour
         //最初の問題をみたい場合
         questions[nowIndex].ShowLog();
 
-        GetComponent<Text>().text = questions[nowIndex].question;
+
+        GetComponentInChildren<Text>().text = questions[nowIndex].question;
         value3.text = questions[nowIndex].answers[0];
         value4.text = questions[nowIndex].answers[1];
         value5.text = questions[nowIndex].answers[2];
+
     }
 
     public void OnClickAnswerButton(int answerIndex)
     {
-
         CorrectAnswerText = questions[nowIndex].GetCorrectAnswerText();
 
         if (questions[nowIndex].answerIndex == answerIndex)
@@ -106,6 +108,8 @@ public class CSVScript : MonoBehaviour
         }
 
     }
+
+
 
     // Update is called once per frame
     void Update()
