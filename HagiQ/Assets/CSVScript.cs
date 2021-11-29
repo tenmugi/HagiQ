@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class CSVScript : MonoBehaviour
 {
@@ -17,15 +18,17 @@ public class CSVScript : MonoBehaviour
 
     public static string QuestionText { get; private set; }
 
+
     // Start is called before the first frame update
     void Start()
     {
+
         //CSVを各行で区切る
         string[] csv = CSV.text.Split('\n');
         Debug.Log(csv.Length);
 
         //全ての行の数だけループする（１行目から開始）
-        for (int i = 1; i < csv.Length; Random.Range(1, 151))
+        for (int i = 1; i < csv.Length; i++)
         {
             //各行の要素を,で区切る
             string[] values = csv[i].Split(',');
@@ -73,7 +76,7 @@ public class CSVScript : MonoBehaviour
 
 
 
-            //７番目：解説
+            //７番目：解説s
             string comment = values[7];
 
             Question q = new Question(category, level, questionText, answers, answerIndex, comment);
@@ -82,8 +85,7 @@ public class CSVScript : MonoBehaviour
             questions[i] = q;
         }
 
-        //全ての行の処理が終わればquestions配列に問題文が格納
-        //最初の問題をみたい場合
+
         questions[nowIndex].ShowLog();
 
 
@@ -91,8 +93,8 @@ public class CSVScript : MonoBehaviour
         value3.text = questions[nowIndex].answers[0];
         value4.text = questions[nowIndex].answers[1];
         value5.text = questions[nowIndex].answers[2];
-
     }
+
 
     public void OnClickAnswerButton(int answerIndex)
     {
@@ -108,7 +110,6 @@ public class CSVScript : MonoBehaviour
         }
 
     }
-
 
 
     // Update is called once per frame
