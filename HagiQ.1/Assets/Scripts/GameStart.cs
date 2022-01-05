@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Next : MonoBehaviour
+public class GameStart : MonoBehaviour
 {
     private bool firstPush = false;
 
-    public void PressNext()
+    public void PressStart()
     {
         if(!firstPush)
         {
-            QuizManager.nowIndex++;
             SceneManager.LoadScene("Quiz");
+            firstPush = true;
         }
     }
 }

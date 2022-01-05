@@ -1,0 +1,291 @@
+Unity Editor version:    2020.3.21f1 (a38c86f6690f)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.0.1 (Build 21A559)
+Darwin version:          21.1.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        8192 MB
+Using pre-set license
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.21f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/mugisama/Desktop/HagiQ/HagiQ
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58788
+Successfully changed project path to: /Users/mugisama/Desktop/HagiQ/HagiQ
+/Users/mugisama/Desktop/HagiQ/HagiQ
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 64.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.21f1 (a38c86f6690f)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.21f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/mugisama/Desktop/HagiQ/HagiQ/Assets
+GfxDevice: creating device client; threaded=0
+2022-01-05 14:34:07.674 Unity[62676:13599189] Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 655 (low power)
+2022-01-05 14:34:07.674 Unity[62676:13599189] Metal devices available: 1
+2022-01-05 14:34:07.674 Unity[62676:13599189] 0: Intel(R) Iris(TM) Plus Graphics 655 (low power)
+2022-01-05 14:34:07.674 Unity[62676:13599189] Using device Intel(R) Iris(TM) Plus Graphics 655 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 655
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.21f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.21f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.21f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56676
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.21f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.21f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.21f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.21f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.21f1/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
+Registered in 0.006388 seconds.
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 44.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  7.254 seconds
+Domain Reload Profiling:
+	ReloadAssembly (7254ms)
+		BeginReloadAssembly (50ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (555ms)
+			LoadAssemblies (54ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (191ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (217ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (31ms)
+				ProcessInitializeOnLoadAttributes (104ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.010875 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 55.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.424 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1426ms)
+		BeginReloadAssembly (161ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1196ms)
+			LoadAssemblies (142ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (376ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (454ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (56ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (263ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Validating Project structure ... 0.000512 seconds.
+Shader import version has changed; will reimport all shaders...
+Upgrading shader files ...0.000499 seconds.
+Application.AssetDatabase Initial Script Refresh Start
+RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
+RefreshProfiler: Total: 0.000ms
+Application.AssetDatabase Initial Script Refresh End
+Application.AssetDatabase.Refresh Start
+Application.AssetDatabase.Refresh End
+RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.21f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Initializing Unity extensions:
+2022-01-05 14:34:18.295 Unity[62676:13599189] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000002f5030 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2022-01-05 14:34:18.299 Unity[62676:13599189] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000002c5ce0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+========================================================================
+Worker process is ready to serve import requests
+Refreshing native plugins compatible for Editor in 0.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2199 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 241.8 MB.
+System memory in use after: 241.1 MB.
+
+Unloading 107 unused Assets to reduce memory usage. Loaded Objects now: 2672.
+Total: 4.294915 ms (FindLiveObjects: 0.225028 ms CreateObjectMapping: 0.109320 ms MarkObjects: 3.381022 ms  DeleteObjects: 0.578385 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Pictures/トイレ.png
+  artifactKey: Guid(4968fe38b0d344d8f8996b1ac1e3d234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/トイレ.png using Guid(4968fe38b0d344d8f8996b1ac1e3d234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b9d3be67b73dc095899dbd38dea314') in 0.333365 seconds 
+  Import took 0.364148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005515 seconds.
+  path: Assets/Pictures/子供.png
+  artifactKey: Guid(f6c9db4755cc5413c8b951c70450b46d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/子供.png using Guid(f6c9db4755cc5413c8b951c70450b46d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39ded6cdfff06b4d9dd5dae0113689f4') in 0.019302 seconds 
+  Import took 0.026605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001582 seconds.
+  path: Assets/Pictures/鍛冶屋.png
+  artifactKey: Guid(e1634b0dbb4bb4e55ac34363e10920e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/鍛冶屋.png using Guid(e1634b0dbb4bb4e55ac34363e10920e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21de748effd5e7329696d2cb6d8327f7') in 0.018009 seconds 
+  Import took 0.024493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Pictures/あご.png
+  artifactKey: Guid(cdcefaf62603b4c6ebf960c8d275a806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/あご.png using Guid(cdcefaf62603b4c6ebf960c8d275a806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ef80bf191eca1d9ada0dc6fed8535a') in 0.014885 seconds 
+  Import took 0.022585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Pictures/振り向きしば.png
+  artifactKey: Guid(85842e9ee489849a684f3ca236b3d1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/振り向きしば.png using Guid(85842e9ee489849a684f3ca236b3d1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '057977efe8ed35094c381adf30140db7') in 0.045579 seconds 
+  Import took 0.051755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Pictures/よってらっしゃい.png
+  artifactKey: Guid(57b8a1e2a56054174a12fb1049100c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/よってらっしゃい.png using Guid(57b8a1e2a56054174a12fb1049100c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97da4a119ef13eb6dd8a5eab31e46198') in 0.043968 seconds 
+  Import took 0.050056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Pictures/侍.png
+  artifactKey: Guid(388cc5f2d6d0e4d38ad954ddb47c8482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/侍.png using Guid(388cc5f2d6d0e4d38ad954ddb47c8482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b45ea875fb74a16d5eb0e0dd3b80b664') in 0.050841 seconds 
+  Import took 0.056123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/Pictures/後ろしば.png
+  artifactKey: Guid(ef80d218e54a243afb25810d40219b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/後ろしば.png using Guid(ef80d218e54a243afb25810d40219b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3802e169237c3e645903ad76e3d3d02') in 0.056438 seconds 
+  Import took 0.062153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/Pictures/鎌爺.png
+  artifactKey: Guid(4c352c99a4ac6404c9b5c45d4bee17ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/鎌爺.png using Guid(4c352c99a4ac6404c9b5c45d4bee17ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0eed34b8f70fd51ac25170b0031a5c5') in 0.069708 seconds 
+  Import took 0.079734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/Pictures/しょんぼり.png
+  artifactKey: Guid(f96c563d5de594af49ea07047fd92d36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/しょんぼり.png using Guid(f96c563d5de594af49ea07047fd92d36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af0616ce00924a2684726996a6bd7b32') in 0.044874 seconds 
+  Import took 0.050168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Pictures/姐さん.png
+  artifactKey: Guid(4ae3a5050a850435d89d195537f3d2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/姐さん.png using Guid(4ae3a5050a850435d89d195537f3d2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0559c046b44a297abd83a08e846e6b') in 0.021086 seconds 
+  Import took 0.025993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Pictures/旅姉さん.png
+  artifactKey: Guid(2e7244049ccf8481897f4028d4287553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/旅姉さん.png using Guid(2e7244049ccf8481897f4028d4287553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '724b32bc3d0747782bb42a2307adfde5') in 0.056078 seconds 
+  Import took 0.061404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/Pictures/魚屋さん.png
+  artifactKey: Guid(43711e13f95544484aac2b053eea124f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/魚屋さん.png using Guid(43711e13f95544484aac2b053eea124f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '436d36ecccefc2c5e9380cabecf74dae') in 0.044918 seconds 
+  Import took 0.050549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Pictures/うふふ.png
+  artifactKey: Guid(8ba657081320a4b4c8ea477c6a17169c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/うふふ.png using Guid(8ba657081320a4b4c8ea477c6a17169c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a333928cc4083eb7532347e7f2ae908') in 0.032808 seconds 
+  Import took 0.037705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Pictures/豆柴？.png
+  artifactKey: Guid(bad1968a120b2457ab5cb49fd6a98d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/豆柴？.png using Guid(bad1968a120b2457ab5cb49fd6a98d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8ea8f928a2a1c8cf351e77d87b0a162') in 0.025582 seconds 
+  Import took 0.030756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/Pictures/考える人.png
+  artifactKey: Guid(42881af5dadbf45c8b32e383e893b846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pictures/考える人.png using Guid(42881af5dadbf45c8b32e383e893b846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4286a99e23e34afc146989be278876fe') in 0.023393 seconds 
+  Import took 0.028829 seconds .
+

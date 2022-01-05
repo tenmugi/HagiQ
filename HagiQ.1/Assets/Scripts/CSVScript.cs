@@ -26,7 +26,7 @@ public class CSVScript : MonoBehaviour
     //確認用の関数
     public void ShowLog()
     {
-        Debug.Log("question:" + question + "\nchoices:" + choices + "\nanswer:" + answer + "\ncomment:" + comment);
+        Debug.Log("question:" + question + "\nchoices1:" + choices[0] + "choices2:" + choices[1] + "choices3:" + choices[2] + "\nanswer:" + answer + "\ncomment:" + comment);
     }
     // Start is called before the first frame update
     void Start()

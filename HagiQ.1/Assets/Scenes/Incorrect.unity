@@ -623,8 +623,9 @@ GameObject:
   - component: {fileID: 1987356007}
   - component: {fileID: 1987356006}
   - component: {fileID: 1987356005}
+  - component: {fileID: 1987356008}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Next
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -693,7 +694,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1987356006}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1987356008}
+        m_TargetAssemblyTypeName: Next, Assembly-CSharp
+        m_MethodName: PressNext
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1987356006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -732,3 +745,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987356003}
   m_CullTransparentMesh: 1
+--- !u!114 &1987356008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987356003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02eb43b22f5ec4eab81917610474cfc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

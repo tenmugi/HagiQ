@@ -10,8 +10,10 @@ public class QuizManager : MonoBehaviour
 {
     public TextAsset CSV;
     public Text value1, value2, value3;
+    public Text values5;
     public static int nowIndex = 1;
     public static string CorrectAnswerText;
+    public static string CommentText;
 
     //CSVから分解した問題クラスを代入
     public CSVScript[] questions = new CSVScript[100];
@@ -75,11 +77,11 @@ public class QuizManager : MonoBehaviour
 
         if (questions[nowIndex].answer == answer)
         {
-            SceneManager.LoadScene("correct");
+            SceneManager.LoadScene("Correct");
         }
         else
         {
-            SceneManager.LoadScene("incorrect");
+            SceneManager.LoadScene("Incorrect");
         }
     }
 
