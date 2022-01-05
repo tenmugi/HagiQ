@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using System;
 
 public class CSVScript : MonoBehaviour
 {
@@ -15,8 +16,8 @@ public class CSVScript : MonoBehaviour
 
     //CSVから分解した問題クラスを代入する配列
     public Question[] questions = new Question[500];
-
     public static string QuestionText { get; private set; }
+
 
 
     // Start is called before the first frame update
@@ -54,6 +55,8 @@ public class CSVScript : MonoBehaviour
             //２番目：問題文
             string questionText = values[2];
 
+            List<string> quiz = new List<string>();
+
             //3~5番目：選択肢　配列でまとめる
             //values[3]A values[4]B values[5]
             string[] answers = { values[3], values[4], values[5] };
@@ -83,7 +86,9 @@ public class CSVScript : MonoBehaviour
 
             //作成したquestionクラスを配列に入れる
             questions[i] = q;
+
         }
+
 
 
         questions[nowIndex].ShowLog();
