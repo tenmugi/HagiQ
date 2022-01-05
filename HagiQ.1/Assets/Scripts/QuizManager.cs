@@ -26,13 +26,13 @@ public class QuizManager : MonoBehaviour
         Debug.Log(csv.Length);
 
         //全ての行だけループする（1行目から開始）
-        for (int i =1; i < csv.Length; i++)
+        for (int i = 1; i < csv.Length; i++)
         {
             //各行の要素を,で区切る
             string[] values = csv[i].Split(',');
 
             //0番目：問題
-            string question = values[0];
+            string questionText = values[0];
 
             //1〜３番目：選択肢（配列でまとめる）
             string[] choices = { values[1], values[2], values[3] };
@@ -54,7 +54,8 @@ public class QuizManager : MonoBehaviour
 
             //5番目：解説
             string comment = values[5];
-            CSVScript q = new CSVScript(question, choices, answer, comment);
+
+            CSVScript q = new CSVScript(questionText, choices, answer, comment);
 
             //作成したCSVScriptクラスを配列に入れる
             questions[i] = q;

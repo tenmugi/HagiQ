@@ -18,6 +18,11 @@ public class CSVScript : MonoBehaviour
         this.comment = comment;
     }
 
+    public string GetCorrectAnswerText()
+    {
+        return choices[answer];
+    }
+
     //確認用の関数
     public void ShowLog()
     {
