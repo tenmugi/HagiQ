@@ -10,10 +10,9 @@ public class QuizManager : MonoBehaviour
 {
     public TextAsset CSV;
     public Text value1, value2, value3;
-    public Text values5;
+    public Text value5;
     public static int nowIndex = 1;
     public static string CorrectAnswerText;
-    public static string CommentText;
 
     //CSVから分解した問題クラスを代入
     public CSVScript[] questions = new CSVScript[100];
@@ -30,6 +29,11 @@ public class QuizManager : MonoBehaviour
         //全ての行だけループする（1行目から開始）
         for (int i = 1; i < csv.Length; i++)
         {
+            if(i == 0)
+            {
+                SceneManager.LoadScene("Finish");
+            }
+
             //各行の要素を,で区切る
             string[] values = csv[i].Split(',');
 
@@ -69,6 +73,7 @@ public class QuizManager : MonoBehaviour
         value1.text = questions[nowIndex].choices[0];
         value2.text = questions[nowIndex].choices[1];
         value3.text = questions[nowIndex].choices[2];
+        value5.text = questions[nowIndex].comment;
     }
 
     public void OnClickAnswerButton(int answer)
