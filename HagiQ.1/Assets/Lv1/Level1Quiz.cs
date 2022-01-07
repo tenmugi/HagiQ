@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class QuizManager : MonoBehaviour
+public class Level1Quiz : MonoBehaviour
 {
     public TextAsset CSV;
     public Text value1, value2, value3;
@@ -15,8 +15,8 @@ public class QuizManager : MonoBehaviour
     public static string CorrectAnswerText;
 
     //CSVから分解した問題クラスを代入
-    public CSVScript[] questions = new CSVScript[100];
-    public static string CSVScriptText { get; private set; }
+    public CSV1[] questions = new CSV1[25];
+    public static string CSV1Text { get; private set; }
 
 
     // Start is called before the first frame update
@@ -29,7 +29,7 @@ public class QuizManager : MonoBehaviour
         //全ての行だけループする（1行目から開始）
         for (int i = 1; i < csv.Length; i++)
         {
-            if(i == 0)
+            if (i == 0)
             {
                 SceneManager.LoadScene("Finish");
             }
@@ -61,10 +61,11 @@ public class QuizManager : MonoBehaviour
             //5番目：解説
             string comment = values[5];
 
-            CSVScript q = new CSVScript(questionText, choices, answer, comment);
+            CSV1 q1 = new CSV1(questionText, choices, answer, comment);
 
-            //作成したCSVScriptクラスを配列に入れる
-            questions[i] = q;
+            //作成したCSV1クラスを配列に入れる
+            questions[i] = q1;
+
         }
 
         questions[nowIndex].ShowLog();
@@ -82,13 +83,14 @@ public class QuizManager : MonoBehaviour
 
         if (questions[nowIndex].answer == answer)
         {
-            SceneManager.LoadScene("Correct");
+            SceneManager.LoadScene("Correct1");
         }
         else
         {
-            SceneManager.LoadScene("Incorrect");
+            SceneManager.LoadScene("Incorrect1");
         }
     }
+
 
     // Update is called once per frame
     void Update()
