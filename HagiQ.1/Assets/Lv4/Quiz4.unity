@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 63244572}
   - component: {fileID: 63244571}
   - component: {fileID: 63244570}
+  - component: {fileID: 63244573}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -205,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 63244571}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 63244573}
+        m_TargetAssemblyTypeName: Level4Quiz, Assembly-CSharp
+        m_MethodName: OnClickAnswerButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &63244571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,6 +257,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63244568}
   m_CullTransparentMesh: 1
+--- !u!114 &63244573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63244568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3d7cbfd8de0496e92b02fdb291fe70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: fb2c964c77b9a41e59659d69ea70a617, type: 3}
+  value1: {fileID: 840255663}
+  value2: {fileID: 1729415580}
+  value3: {fileID: 1410576533}
+  value5: {fileID: 770730093}
 --- !u!1 &237264976
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +286,7 @@ GameObject:
   - component: {fileID: 237264980}
   - component: {fileID: 237264979}
   - component: {fileID: 237264978}
+  - component: {fileID: 237264981}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -326,7 +357,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 237264979}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 237264981}
+        m_TargetAssemblyTypeName: Level4Quiz, Assembly-CSharp
+        m_MethodName: OnClickAnswerButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &237264979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,6 +408,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237264976}
   m_CullTransparentMesh: 1
+--- !u!114 &237264981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237264976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3d7cbfd8de0496e92b02fdb291fe70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: fb2c964c77b9a41e59659d69ea70a617, type: 3}
+  value1: {fileID: 840255663}
+  value2: {fileID: 1729415580}
+  value3: {fileID: 1410576533}
+  value5: {fileID: 770730093}
 --- !u!1 &417857910
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,6 +513,7 @@ GameObject:
   - component: {fileID: 732537750}
   - component: {fileID: 732537749}
   - component: {fileID: 732537748}
+  - component: {fileID: 732537751}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -523,7 +584,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 732537749}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 732537751}
+        m_TargetAssemblyTypeName: Level4Quiz, Assembly-CSharp
+        m_MethodName: OnClickAnswerButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &732537749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -562,6 +635,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732537746}
   m_CullTransparentMesh: 1
+--- !u!114 &732537751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732537746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3d7cbfd8de0496e92b02fdb291fe70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: fb2c964c77b9a41e59659d69ea70a617, type: 3}
+  value1: {fileID: 840255663}
+  value2: {fileID: 1729415580}
+  value3: {fileID: 1410576533}
+  value5: {fileID: 770730093}
 --- !u!1 &770730091
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +663,7 @@ GameObject:
   - component: {fileID: 770730092}
   - component: {fileID: 770730094}
   - component: {fileID: 770730093}
+  - component: {fileID: 770730095}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -641,6 +732,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770730091}
   m_CullTransparentMesh: 1
+--- !u!114 &770730095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770730091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3d7cbfd8de0496e92b02fdb291fe70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: fb2c964c77b9a41e59659d69ea70a617, type: 3}
+  value1: {fileID: 840255663}
+  value2: {fileID: 1729415580}
+  value3: {fileID: 1410576533}
+  value5: {fileID: 770730093}
 --- !u!1 &840255661
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +922,7 @@ GameObject:
   - component: {fileID: 1410569371}
   - component: {fileID: 1410569373}
   - component: {fileID: 1410569372}
+  - component: {fileID: 1410569374}
   m_Layer: 5
   m_Name: Quiz
   m_TagString: Untagged
@@ -885,6 +994,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410569370}
   m_CullTransparentMesh: 1
+--- !u!114 &1410569374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410569370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3d7cbfd8de0496e92b02fdb291fe70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: fb2c964c77b9a41e59659d69ea70a617, type: 3}
+  value1: {fileID: 840255663}
+  value2: {fileID: 1729415580}
+  value3: {fileID: 1410576533}
+  value5: {fileID: 770730093}
 --- !u!1 &1410576531
 GameObject:
   m_ObjectHideFlags: 0

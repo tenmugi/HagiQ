@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 71475535}
   - component: {fileID: 71475537}
   - component: {fileID: 71475536}
+  - component: {fileID: 71475538}
   m_Layer: 5
   m_Name: Comment
   m_TagString: Untagged
@@ -268,6 +269,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71475534}
   m_CullTransparentMesh: 1
+--- !u!114 &71475538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71475534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c8d7628153740d993cc2a118827e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: a45b9dcb0415d4d9fa1f0e0b2573620f, type: 3}
+  value1: {fileID: 268738756}
+  value2: {fileID: 1578555302}
+  value3: {fileID: 544165890}
+  value5: {fileID: 71475536}
+  scoreText: {fileID: 659214772}
 --- !u!1 &268738754
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,6 +378,7 @@ GameObject:
   - component: {fileID: 295603551}
   - component: {fileID: 295603550}
   - component: {fileID: 295603549}
+  - component: {fileID: 295603552}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -429,7 +449,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 295603550}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 295603552}
+        m_TargetAssemblyTypeName: Level2Quiz, Assembly-CSharp
+        m_MethodName: OnClickAnswerButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &295603550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,6 +500,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295603547}
   m_CullTransparentMesh: 1
+--- !u!114 &295603552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295603547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c8d7628153740d993cc2a118827e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: a45b9dcb0415d4d9fa1f0e0b2573620f, type: 3}
+  value1: {fileID: 268738756}
+  value2: {fileID: 1578555302}
+  value3: {fileID: 544165890}
+  value5: {fileID: 71475536}
+  scoreText: {fileID: 659214772}
 --- !u!1 &544165888
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +700,104 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &659214769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 659214770}
+  - component: {fileID: 659214773}
+  - component: {fileID: 659214772}
+  - component: {fileID: 659214771}
+  m_Layer: 5
+  m_Name: Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &659214770
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659214769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1089489147}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &659214771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659214769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c8d7628153740d993cc2a118827e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: a45b9dcb0415d4d9fa1f0e0b2573620f, type: 3}
+  value1: {fileID: 268738756}
+  value2: {fileID: 1578555302}
+  value3: {fileID: 544165890}
+  value5: {fileID: 71475536}
+  scoreText: {fileID: 659214772}
+--- !u!114 &659214772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659214769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &659214773
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659214769}
+  m_CullTransparentMesh: 1
 --- !u!1 &1081355993
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +949,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 71475535}
+  - {fileID: 659214770}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -820,6 +969,7 @@ GameObject:
   - component: {fileID: 1257721312}
   - component: {fileID: 1257721314}
   - component: {fileID: 1257721313}
+  - component: {fileID: 1257721316}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -888,6 +1038,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257721311}
   m_CullTransparentMesh: 1
+--- !u!114 &1257721316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257721311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c8d7628153740d993cc2a118827e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: a45b9dcb0415d4d9fa1f0e0b2573620f, type: 3}
+  value1: {fileID: 268738756}
+  value2: {fileID: 1578555302}
+  value3: {fileID: 544165890}
+  value5: {fileID: 71475536}
+  scoreText: {fileID: 659214772}
 --- !u!1 &1578555300
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,6 +1147,7 @@ GameObject:
   - component: {fileID: 1626077824}
   - component: {fileID: 1626077823}
   - component: {fileID: 1626077822}
+  - component: {fileID: 1626077825}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -1049,7 +1218,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1626077823}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1626077825}
+        m_TargetAssemblyTypeName: Level2Quiz, Assembly-CSharp
+        m_MethodName: OnClickAnswerButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1626077823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1088,6 +1269,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626077820}
   m_CullTransparentMesh: 1
+--- !u!114 &1626077825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626077820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c8d7628153740d993cc2a118827e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: a45b9dcb0415d4d9fa1f0e0b2573620f, type: 3}
+  value1: {fileID: 268738756}
+  value2: {fileID: 1578555302}
+  value3: {fileID: 544165890}
+  value5: {fileID: 71475536}
+  scoreText: {fileID: 659214772}
 --- !u!1 &1687579844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,6 +1299,7 @@ GameObject:
   - component: {fileID: 1687579848}
   - component: {fileID: 1687579847}
   - component: {fileID: 1687579846}
+  - component: {fileID: 1687579849}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -1170,7 +1370,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1687579847}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1687579849}
+        m_TargetAssemblyTypeName: Level2Quiz, Assembly-CSharp
+        m_MethodName: OnClickAnswerButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1687579847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1209,3 +1421,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687579844}
   m_CullTransparentMesh: 1
+--- !u!114 &1687579849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687579844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c8d7628153740d993cc2a118827e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: a45b9dcb0415d4d9fa1f0e0b2573620f, type: 3}
+  value1: {fileID: 268738756}
+  value2: {fileID: 1578555302}
+  value3: {fileID: 544165890}
+  value5: {fileID: 71475536}
+  scoreText: {fileID: 659214772}

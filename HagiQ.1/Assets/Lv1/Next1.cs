@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Next1 : MonoBehaviour
 {
-    private bool firstPush = false;
-
-    public void PressNext()
+    public void OnClickNextButton()
     {
-        if (!firstPush)
+        Level1Quiz.nowIndex++;
+        SceneManager.LoadScene("quiz1");
+
+        if(Level1Quiz.nowIndex == 25)
         {
-            Level1Quiz.nowIndex++;
-            SceneManager.LoadScene("quiz1");
+            SceneManager.LoadScene("Finish1");
         }
     }
 }

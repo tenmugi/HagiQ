@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class CSV1
+public class csv3
 {
     public string question;
     public string[] choices;
     public int answer;
     public string comment;
 
-    public CSV1(string question, string[]choices, int answer, string comment)
+    public csv3(string question, string[] choices, int answer, string comment)
     {
         this.question = question;
         this.choices = choices;
@@ -35,12 +35,12 @@ public class CSV1
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

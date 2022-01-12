@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class Level1Quiz : MonoBehaviour
+public class Level3Quiz : MonoBehaviour
 {
     public TextAsset CSV;
     public Text value1, value2, value3;
@@ -15,8 +15,8 @@ public class Level1Quiz : MonoBehaviour
     public static string CorrectAnswerText;
 
     //CSVから分解した問題クラスを代入
-    public CSV1[] questions = new CSV1[26];
-    public static string CSV1Text { get; private set; }
+    public csv3[] questions = new csv3[27];
+    public static string CSV3Text { get; private set; }
 
     public Text scoreText;
     public static int score = 0;
@@ -59,10 +59,10 @@ public class Level1Quiz : MonoBehaviour
             //5番目：解説
             string comment = values[5];
 
-            CSV1 q = new CSV1(questionText, choices, answer, comment);
+            csv3 q = new csv3(questionText, choices, answer, comment);
 
             //作成したCSV1クラスを配列に入れる
-                questions[i] = q;
+            questions[i] = q;
         }
 
         questions[nowIndex].ShowLog();
@@ -83,12 +83,11 @@ public class Level1Quiz : MonoBehaviour
         if (questions[nowIndex].answer == answer)
         {
             score += 1;
-            Debug.Log(score);
-            SceneManager.LoadScene("Correct1");
+            SceneManager.LoadScene("Correct3");
         }
         else
         {
-            SceneManager.LoadScene("Incorrect1");
+            SceneManager.LoadScene("Incorrect3");
         }
     }
 

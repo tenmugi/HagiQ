@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 158015707}
   - component: {fileID: 158015706}
   - component: {fileID: 158015705}
+  - component: {fileID: 158015708}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -284,7 +285,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 158015706}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 158015708}
+        m_TargetAssemblyTypeName: Next2, Assembly-CSharp
+        m_MethodName: OnClickNextButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &158015706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,6 +336,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158015703}
   m_CullTransparentMesh: 1
+--- !u!114 &158015708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158015703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f86ebf7a3b89848d7bd1bd75b44d74fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &230618582
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +702,7 @@ GameObject:
   - component: {fileID: 1357778979}
   - component: {fileID: 1357778981}
   - component: {fileID: 1357778980}
+  - component: {fileID: 1357778982}
   m_Layer: 5
   m_Name: Comment
   m_TagString: Untagged
@@ -745,6 +771,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357778978}
   m_CullTransparentMesh: 1
+--- !u!114 &1357778982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357778978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c8d7628153740d993cc2a118827e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: a45b9dcb0415d4d9fa1f0e0b2573620f, type: 3}
+  value1: {fileID: 2112729638}
+  value2: {fileID: 1635159562}
+  value3: {fileID: 1877419395}
+  value5: {fileID: 1357778980}
+  scoreText: {fileID: 1436034744}
 --- !u!1 &1436034742
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,8 +800,9 @@ GameObject:
   - component: {fileID: 1436034743}
   - component: {fileID: 1436034745}
   - component: {fileID: 1436034744}
+  - component: {fileID: 1436034746}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -824,6 +869,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436034742}
   m_CullTransparentMesh: 1
+--- !u!114 &1436034746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436034742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c8d7628153740d993cc2a118827e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: a45b9dcb0415d4d9fa1f0e0b2573620f, type: 3}
+  value1: {fileID: 0}
+  value2: {fileID: 0}
+  value3: {fileID: 0}
+  value5: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!1 &1635159560
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,6 +898,7 @@ GameObject:
   - component: {fileID: 1635159561}
   - component: {fileID: 1635159563}
   - component: {fileID: 1635159562}
+  - component: {fileID: 1635159564}
   m_Layer: 5
   m_Name: Text (2)
   m_TagString: Untagged
@@ -903,6 +967,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635159560}
   m_CullTransparentMesh: 1
+--- !u!114 &1635159564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635159560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c8d7628153740d993cc2a118827e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: a45b9dcb0415d4d9fa1f0e0b2573620f, type: 3}
+  value1: {fileID: 2112729638}
+  value2: {fileID: 1635159562}
+  value3: {fileID: 1877419395}
+  value5: {fileID: 1357778980}
+  scoreText: {fileID: 1436034744}
 --- !u!1 &1822573485
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,6 +1062,7 @@ GameObject:
   - component: {fileID: 1877419394}
   - component: {fileID: 1877419396}
   - component: {fileID: 1877419395}
+  - component: {fileID: 1877419397}
   m_Layer: 5
   m_Name: Text (3)
   m_TagString: Untagged
@@ -1048,6 +1131,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877419393}
   m_CullTransparentMesh: 1
+--- !u!114 &1877419397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877419393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c8d7628153740d993cc2a118827e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: a45b9dcb0415d4d9fa1f0e0b2573620f, type: 3}
+  value1: {fileID: 2112729638}
+  value2: {fileID: 1635159562}
+  value3: {fileID: 1877419395}
+  value5: {fileID: 1357778980}
+  scoreText: {fileID: 1436034744}
 --- !u!1 &2112729636
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,6 +1160,7 @@ GameObject:
   - component: {fileID: 2112729637}
   - component: {fileID: 2112729639}
   - component: {fileID: 2112729638}
+  - component: {fileID: 2112729640}
   m_Layer: 5
   m_Name: Text (1)
   m_TagString: Untagged
@@ -1127,3 +1229,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112729636}
   m_CullTransparentMesh: 1
+--- !u!114 &2112729640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112729636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c8d7628153740d993cc2a118827e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CSV: {fileID: 4900000, guid: a45b9dcb0415d4d9fa1f0e0b2573620f, type: 3}
+  value1: {fileID: 2112729638}
+  value2: {fileID: 1635159562}
+  value3: {fileID: 1877419395}
+  value5: {fileID: 1357778980}
+  scoreText: {fileID: 1436034744}
