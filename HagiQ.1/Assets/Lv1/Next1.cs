@@ -10,7 +10,7 @@ public class Next1 : MonoBehaviour
         Level1Quiz.nowIndex++;
         SceneManager.LoadScene("quiz1");
 
-        if(Level1Quiz.nowIndex == 25)
+        if(Level1Quiz.nowIndex == 26)
         {
             SceneManager.LoadScene("Finish1");
         }

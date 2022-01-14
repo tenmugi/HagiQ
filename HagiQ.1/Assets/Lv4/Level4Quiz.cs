@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class QuizManager : MonoBehaviour
+public class Level4Quiz : MonoBehaviour
 {
     public TextAsset CSV;
     public Text value1, value2, value3;
@@ -15,8 +15,11 @@ public class QuizManager : MonoBehaviour
     public static string CorrectAnswerText;
 
     //CSVから分解した問題クラスを代入
-    public CSVScript[] questions = new CSVScript[100];
-    public static string CSVScriptText { get; private set; }
+    public csv4[] questions = new csv4[27];
+    public static string CSV4Text { get; private set; }
+
+    public Text scoreText;
+    public static int score = 0;
 
 
     // Start is called before the first frame update
@@ -29,11 +32,6 @@ public class QuizManager : MonoBehaviour
         //全ての行だけループする（1行目から開始）
         for (int i = 1; i < csv.Length; i++)
         {
-            if(i == 0)
-            {
-                SceneManager.LoadScene("Finish");
-            }
-
             //各行の要素を,で区切る
             string[] values = csv[i].Split(',');
 
@@ -61,12 +59,10 @@ public class QuizManager : MonoBehaviour
             //5番目：解説
             string comment = values[5];
 
-            CSVScript q = new CSVScript(questionText, choices, answer, comment);
+            csv4 q = new csv4(questionText, choices, answer, comment);
 
-            //作成したCSVScriptクラスを配列に入れる
+            //作成したCSV1クラスを配列に入れる
             questions[i] = q;
-
-            Debug.Log(i);
         }
 
         questions[nowIndex].ShowLog();
@@ -76,6 +72,8 @@ public class QuizManager : MonoBehaviour
         value2.text = questions[nowIndex].choices[1];
         value3.text = questions[nowIndex].choices[2];
         value5.text = questions[nowIndex].comment;
+
+        scoreText.GetComponentInChildren<Text>().text = score + "問正解！";
     }
 
     public void OnClickAnswerButton(int answer)
@@ -84,17 +82,19 @@ public class QuizManager : MonoBehaviour
 
         if (questions[nowIndex].answer == answer)
         {
-            SceneManager.LoadScene("Correct");
+            score += 1;
+            SceneManager.LoadScene("Correct4");
         }
         else
         {
-            SceneManager.LoadScene("Incorrect");
+            SceneManager.LoadScene("Incorrect4");
         }
     }
+
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

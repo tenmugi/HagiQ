@@ -8,7 +8,7 @@ public class Next3 : MonoBehaviour
     public void OnClickNextButton()
     {
         Level3Quiz.nowIndex++;
-        SceneManager.LoadScene("quiz3");
+        SceneManager.LoadScene("Quiz3");
 
         if (Level3Quiz.nowIndex == 26)
         {
