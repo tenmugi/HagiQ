@@ -73,7 +73,7 @@ public class Challenge : MonoBehaviour
         value3.text = questions[nowIndex].choices[2];
         value5.text = questions[nowIndex].comment;
 
-        scoreText.GetComponentInChildren<Text>().text = score + "/25問正解";
+        scoreText.GetComponentInChildren<Text>().text = score + "/100問正解";
     }
 
     public void OnClickAnswerButton(int answer)

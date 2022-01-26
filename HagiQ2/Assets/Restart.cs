@@ -3,17 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Title1 : MonoBehaviour
+public class Restart : MonoBehaviour
 {
     private bool firstPush = false;
 
-    public void PressTitle()
+    public void Presstitle()
     {
         if (!firstPush)
         {
-            SceneManager.LoadScene("Title");
-            Challenge.nowIndex = 1;
-            Challenge.score = 0;
+            SceneManager.LoadScene("TitleScene");
             firstPush = true;
         }
     }
