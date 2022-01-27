@@ -34,7 +34,6 @@ public class PlayerManagerer : MonoBehaviour
     private void Start()
     {
         rbody2D = GetComponent<Rigidbody2D>();
-
         QuizBG.SetActive(false);
     }
 
@@ -47,6 +46,7 @@ public class PlayerManagerer : MonoBehaviour
             Jump();
         }
     }
+
 
     //物理演算（rigidbody)をFixedUpdateで処理
     private void FixedUpdate()
@@ -62,6 +62,11 @@ public class PlayerManagerer : MonoBehaviour
         {
             scale.x = 3;
             speed = 0;
+
+            if(Input.GetMouseButtonDown(0))
+            {
+                move = MOVE_TYPE.RUN;
+            }
         }
 
         transform.localScale = scale; //scaleを代入
@@ -81,7 +86,6 @@ public class PlayerManagerer : MonoBehaviour
         SceneManager.LoadScene("TitleScene");
     }
 
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Orange")
@@ -100,6 +104,7 @@ public class PlayerManagerer : MonoBehaviour
 
         if (collision.gameObject.tag == "GameOver")
         {
+            GameOverTxt.SetActive(true);
             isEnd = true;
             Debug.Log("game over");
             //GameRestartを呼び出して2秒待つ

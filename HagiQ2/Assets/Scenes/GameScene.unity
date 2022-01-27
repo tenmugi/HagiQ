@@ -15809,7 +15809,7 @@ MonoBehaviour:
     Answer:
     - "\u5E73\u5B89\u53E4\u5730\u533A"
     - "\u6D5C\u5D0E\u5730\u533A"
-    - "\u4F50\u3005\u6CE2\u5730\u533A"
+    - "\u4F50\u3005\u4E26\u5730\u533A"
     CorrectAnswer: 3
   - Question: "\u6A19\u9AD8\u304C789m\u3042\u308A\u3001\u8429\u5E02\u3067\u4E00\u756A\u9AD8\u3044\u5C71\u306F\u3069\u308C\uFF1F(\u81EA\u71365)"
     Answer:
@@ -15854,6 +15854,7 @@ MonoBehaviour:
   currentQuestion: 0
   QuestionTxt: {fileID: 2000433719}
   QuizBG: {fileID: 50387700}
+  GameOverTxt: {fileID: 960270255}
   playerManager: {fileID: 1209157927}
 --- !u!1 &1899965827
 GameObject:

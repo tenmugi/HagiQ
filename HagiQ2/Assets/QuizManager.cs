@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class QuizManager : MonoBehaviour
 {
@@ -10,6 +12,10 @@ public class QuizManager : MonoBehaviour
     public int currentQuestion;
 
     public Text QuestionTxt;
+
+    public GameObject QuizBG;
+    public GameObject GameOverTxt;
+
 
     //プレイヤースクリプトと繋げる
     public PlayerManagerer playerManager;
@@ -23,6 +29,17 @@ public class QuizManager : MonoBehaviour
     {
         QnA.RemoveAt(currentQuestion);
         generateQuestion();
+        QuizBG.SetActive(false);
+        GameOverTxt.SetActive(false);
+    }
+
+    public void incorrect()
+    {
+        Debug.Log("game over");
+        GameOverTxt.SetActive(true);
+        QuizBG.SetActive(false);
+        //GameRestartを呼び出して2秒待つ
+        Invoke("GameRestart", 3);
     }
 
     void SetAnswers()
